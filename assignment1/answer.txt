@@ -1,0 +1,6 @@
+1.How to check a variable’s type?
+- Ð? tr? chu?t vào tên bi?n ho?c giá tr? gán vào bi?n dó
+- Dùng câu l?nh type() d? ki?m tra
+2.In what cases, you will get SyntaxError from the compiler telling you that some of your variables have invalid names? Can you give 3 different examples of invalid names?
+- Khi trình biên d?ch báo l?i là do tên bi?n du?c d?t b?t d?u b?ng ch? s?, ho?c có ch?a các kí t? d?c bi?t, d?u g?ch ngang.
+- ví d?: 123abc, abc!@#, abc-def
