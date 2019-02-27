@@ -1,0 +1,20 @@
+1. Boolean là kiểu giá trị chỉ có 2 giá trị đúng hoặc sai.
+- 5==6
+- "male" != "female"
+- 1>2
+2. flow chart là biểu đồ diễn tả 1 quá trình thực thi của 1 chương trình. Mỗi bước trong quy trình
+được thể hiện bằng 1 biểu tượng khác nhau và chứa một mô tả ngắn về bước quy trình. Các ký hiệu 
+biểu đồ được liên kết với nhau bằng các mũi tên hiển thị hướng dòng quy trình.
+3. Biểu thức điều kiện lồng nhau là khi chúng ta sử dụng câu lệnh if...elif...else bên trong
+một câu lệnh if...elif...else khác.
+ví dụ:
+n = int(input("Enter your age: "))
+if(n>0):
+	if(n < 10):
+		print("baby")
+	elif(n < 18):
+	print("teenager)
+	else:
+	print("not baby")
+else:
+	print("Invalid age. Age's not negative!")
