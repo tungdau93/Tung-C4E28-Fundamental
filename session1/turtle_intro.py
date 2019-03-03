@@ -1,15 +1,15 @@
 from turtle import *
 # khởi tạo con rùa
-shape('turtle')
+shape ('turtle')
 speed(0)
 
 # vòng lặp 500 lần
-# for i in range(500):
-#     for j in range(4):
-#         forward(100)
-#         left(90)
+for i in range(500):
+    for j in range(4):
+        forward(100)
+        left(90)
         
-#     left(7)
+    left(7)
 
 #chọn màu cho hình vẽ
 # color("red","yellow")
