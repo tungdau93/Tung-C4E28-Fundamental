@@ -1,4 +1,4 @@
-sheep = [5, 7, 300, 90, 300, 50, 75]
+sheep = [5, 7, 300, 90, 24, 50, 75]
 print("========================================================")
 print("\n1. Hello, My name is Tùng and these are my sheep sizes")
 print(sheep)
@@ -10,9 +10,8 @@ print("\n2. Now my biggest sheep has size", max(sheep), "let's shear it")
 
 print("========================================================")
 print("\n3. After shearing, here is my flock")
-i =  sheep.index(max(sheep))
-# print(index)
-sheep[i] = 8
+index =  sheep.index(max(sheep))
+sheep[index] = 8
 print(sheep)
 
 
