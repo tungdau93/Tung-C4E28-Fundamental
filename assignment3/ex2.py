@@ -1,4 +1,4 @@
-sheep = [5, 7, 300, 90, 24, 50, 75]
+sheep = [5, 7, 300, 90, 300, 50, 75]
 print("========================================================")
 print("\n1. Hello, My name is Tùng and these are my sheep sizes")
 print(sheep)
