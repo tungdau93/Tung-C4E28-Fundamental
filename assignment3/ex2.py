@@ -1,4 +1,4 @@
-sheep = [5, 7, 300, 90, 24, 50, 75]
+sheep = [300, 7, 300, 300, 24, 50, 90]
 print("========================================================")
 print("\n1. Hello, My name is Tùng and these are my sheep sizes")
 print(sheep)
@@ -10,8 +10,10 @@ print("\n2. Now my biggest sheep has size", max(sheep), "let's shear it")
 
 print("========================================================")
 print("\n3. After shearing, here is my flock")
-index =  sheep.index(max(sheep))
-sheep[index] = 8
+m = max(sheep)
+for i in range(len(sheep)):
+    if(m == sheep[i]):
+        sheep[i] = 8
 print(sheep)
 
 
@@ -24,7 +26,7 @@ print(sheep)
 
 print("========================================================")
 print("\n5. Hello, My name is Tùng and these are my sheep sizes")
-sheep = [5, 7, 300, 90, 24, 50, 75]
+sheep = [300, 7, 300, 90, 24, 300, 90]
 print(sheep)
 print("\nMONTH 1: ")
 print("One month has passed, now here is my flock")
@@ -33,9 +35,12 @@ for i in range(0,len(sheep)):
 print(sheep)
 print("Now my biggest sheep has size", max(sheep), "let's shear it")
 print("After shearing, here is my flock")
-i =  sheep.index(max(sheep))
-sheep[i] = 8
+m = max(sheep)
+for i in range(len(sheep)):
+    if(m == sheep[i]):
+        sheep[i] = 8
 print(sheep)
+
 print("\nMONTH 2:")
 print("One month has passed, now here is my flock")
 for i in range(0,len(sheep)):
@@ -43,9 +48,12 @@ for i in range(0,len(sheep)):
 print(sheep)
 print("Now my biggest sheep has size", max(sheep), "let's shear it")
 print("After shearing, here is my flock")
-i =  sheep.index(max(sheep))
-sheep[i] = 8
+m = max(sheep)
+for i in range(len(sheep)):
+    if(m == sheep[i]):
+        sheep[i] = 8
 print(sheep)
+
 print("\nMONTH 3:")
 print("One month has passed, now here is my flock")
 for i in range(0,len(sheep)):
@@ -53,8 +61,10 @@ for i in range(0,len(sheep)):
 print(sheep)
 print("Now my biggest sheep has size", max(sheep), "let's shear it")
 print("After shearing, here is my flock")
-i =  sheep.index(max(sheep))
-sheep[i] = 8
+m = max(sheep)
+for i in range(len(sheep)):
+    if(m == sheep[i]):
+        sheep[i] = 8
 print(sheep)
 
 
