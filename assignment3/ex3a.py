@@ -1,7 +1,16 @@
-words = ["a", "n", "m", "o", "p", "h", "c", "i"]
+from random import randint
+words = ["c", "h", "a", "m", "p", "i", "o", "n"]
 print("Word jumble")
-print(*words)
-inp = input("Your answer: ")
+
+loop = True
+while loop:
+    if(len(words) > 0):
+        index = randint(0, len(words) - 1)
+        print(words[index], end = " ")
+        del words[index]
+    else:
+        loop = False
+inp = input("\nYour answer: ")
 if(inp == "champion"):
     print("hura!")
 else:
