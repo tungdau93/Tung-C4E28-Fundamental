@@ -3,12 +3,12 @@
 # print(*r1)
 
 
-# range(i,j): từ i đến j
+# range(i,j): từ i đến j-1
 # r1 = range(5,10)
 # print(*r1)
 
 
-# range(i,j,k): i là start, j là stop, k là step
+# range(i,j,k): từ i đến j-1, k là step giữa các phần tử
 # r1 = range(5,20,3)
 # print(*r1)
 
