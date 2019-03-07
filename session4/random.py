@@ -4,11 +4,8 @@ All you have to do is to answer to my guess
 'c' if my guess is 'c'orrect
 's' if my guess is 's'maller' than your number
 'l' if my guess is 'l'arger' than your number''')
-
-
 low = 1
 high = 101
-
 while True:
     mid  = (low + high)//2
     # print("Is", mid, "your number?")
