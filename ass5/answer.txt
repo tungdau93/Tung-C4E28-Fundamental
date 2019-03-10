@@ -1,0 +1,37 @@
+1. Why should we use functions at all?
+	- Sử dụng được nhiều lần sau mỗi lần gọi
+	- Dễ quản lý, source code gọn gàng sáng sủa, rút gọn được số lượng dòng code
+	- Private 1 số thông tin, thuật toán cần thiết
+2. How to define/declare a function?
+	def tên_hàm():
+		Câu lệnh
+3. How to call/use a function?
+	tên_hàm()
+4. What is return, why and how do we use it?
+	- Từ khóa return là để trả về kết quả mong muốn mà hàm mình vừa tạo ra.
+	- Nếu không có từ khóa return thì chương trình sẽ tự động trả về giá trị NONE
+	def():
+		câu lệnh
+		return ketqua
+5. Do we have to use return in every function?
+	Không. Vì đôi khi có những hàm không cần trả về kết quả nào đó
+6. What are function arguments/parameters, why and how we use it?
+	- arguments là đối số
+	- parameters là tham số
+	- Khi 1 hàm được gọi, các đối số sẽ là dữ liệu được truyền vào các tham số của hàm
+	def ex(x, y):
+		result = x + y
+		return result
+	ex(1,2)
+	Như ví dụ trên: các đối số là 1 và 2 là dữ liệu được truyền vào các tham số x và y của hàm ex()
+7. How to use function from a different file other than our currently working file?
+	Chúng ta có 2 cách gọi:
+	- Cách 1:
+		from file import function (khai báo thư viện)
+		function()					(gọi hàm)
+	- Cách 2:
+		import file					(khai báo thư viện)
+		file.function()				(gọi hàm)
+	- Nên sử dụng cách 2 hơn vì nó rõ ràng hơn cách 1. Vì khi mình gọi hàm ra thì sẽ biết rõ là hàm đó từ file nào ra.
+	
+	
