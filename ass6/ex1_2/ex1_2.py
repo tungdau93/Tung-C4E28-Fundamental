@@ -39,7 +39,8 @@ for each_list in song_list:
     # print(search_songs)
     option = {
         "default_search": "ytsearch",
-        "max_downloads": 1
+        "max_downloads": 1,
+        "format": "bestaudio/audio"
     }
     dl = YoutubeDL(option)
     dl.download([search_songs])
