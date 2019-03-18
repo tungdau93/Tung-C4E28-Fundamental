@@ -1,4 +1,4 @@
-def get_sum(a = [], b = []):
-    
-    return True
+menu = {1:2, 3:4}
+
+
 

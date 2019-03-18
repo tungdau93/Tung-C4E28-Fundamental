@@ -23,6 +23,11 @@ shapes = [
     }
 ]
 
+def check_point(x, y):
+    if x[0] in range(y[0],y[0]+y[2]) and x[1] in range(y[1],y[1]+y[3]):
+        return True
+    else:
+        return False
 
 def get_shapes():
     return shapes
