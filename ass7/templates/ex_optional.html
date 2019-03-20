@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Optional - TungDV</title>
+</head>
+<body>
+    <h2 style="text-align:center">{{ username.upper() }}'S INFORMATION</h2>
+    {% if(username == "tung") %}
+        <p><b>Name:</b> {{ users.tung.name }}</p>
+        <p><b>Age:</b> {{ users.tung.age }}</p>
+        <p><b>Sex:</b> {{ users.tung.sex }}</p>
+        <p><b>Hobbies:</b> {{ users.tung.hobbies }}</p><hr>
+    {% elif(username == "tram") %}
+        <p><b>Name:</b> {{ users.tram.name }}</p>
+        <p><b>Age:</b> {{ users.tram.age }}</p>
+        <p><b>Sex:</b> {{ users.tram.sex }}</p>
+        <p><b>Hobbies:</b> {{ users.tram.hobbies }}</p><hr>
+    {% elif(username == "hoabinh") %}
+        <p><b>Name:</b> {{ users.hoabinh.name }}</p>
+        <p><b>Age:</b> {{ users.hoabinh.age }}</p>
+        <p><b>Sex:</b> {{ users.hoabinh.sex }}</p>
+        <p><b>Hobbies:</b> {{ users.hoabinh.hobbies }}</p><hr>
+    {% else %}
+    <p>User not found</p><hr>
+    {% endif %}
+</body>
+</html>
