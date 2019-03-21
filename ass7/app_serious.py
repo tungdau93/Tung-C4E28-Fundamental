@@ -6,15 +6,15 @@ app = Flask(__name__)
 def ex_serious_without_templates(weight, height):
     BMI = weight/((height/100)**2)
     if(BMI < 16):
-        return "<p>Severely underweight</p>"
+        return "Severely underweight"
     elif(BMI < 18.5):
-        return "<p>Underweight</p>"
+        return "Underweight"
     elif(BMI < 25):
-        return "<p>Normal</p>"
+        return "Normal"
     elif(BMI < 30):
-        return "<p>Overweight</p>"
+        return "Overweight"
     else:
-        return "<p>Obese</p>"
+        return "Obese"
 
 @app.route('/bmiwith/<int:weight>/<int:height>')
 def ex_serious_with_templates(weight, height):
