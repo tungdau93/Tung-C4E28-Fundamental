@@ -5,13 +5,13 @@ client = MongoClient(uri)
 db = client.get_database()
 rivers_collection = db["river"]
 
-continent1_list = rivers_collection.find({ "continent": "Africa" })
-for each_continent1 in continent1_list:
-    print(each_continent1)
+africa_continent = rivers_collection.find({ "continent": "Africa" })
+for each_africa in africa_continent:
+    print(each_africa)
 
 print("*" * 120)
 
-continent2_list = rivers_collection.find({ "continent": "S. America" })
-for each_continent2 in continent2_list:
-    if(each_continent2["length"] < 1000 ):
-        print(each_continent2)
+america_continent = rivers_collection.find({ "continent": "S. America" })
+for each_america in america_continent:
+    if(each_america["length"] < 1000 ):
+        print(each_america)
