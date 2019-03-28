@@ -3,7 +3,7 @@ from matplotlib import pyplot
 
 uri = "mongodb://admin:admin@ds021182.mlab.com:21182/c4e"
 client = MongoClient(uri)
-db = client.c4e
+db = client.get_database()
 customers_collection = db["customers"]
 
 ref_events = customers_collection.find({ "ref": "events" })
