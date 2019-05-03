@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p style="text-align: right"><a href="/logout">Logout</a></p>
+    {#<!-- {% for service in all_services: %}
+    <div>
+        {% if(service.gender == "male") %}
+            <img src="/static/images/male.jpg"><br>
+        {% elif(service.gender == "female") %}
+            <img src="/static/images/Female.jpg"><br>
+        {% endif %}
+        <p><b>Name:</b>{{ service.name }}</p>
+        <p><b>Age:</b> {{ service.age }}</p>
+        <p><b>Address:</b> {{ service.address }}</p>
+        <p><b>Gender:</b> {{ service.gender }}</p>
+        <p><b>Available:</b> {{ service.available }}</p>
+        <a href="{{ url_for('detail', id = service._id) }}">Detail</a>
+        <a href="{{ url_for('delete', id = service._id) }}">Delete</a>
+    </div>
+    <hr>
+    {% endfor %} --> #}
+   
+    <table style="width:100%">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Address</th>
+            <th>Gender</th>
+            <th>Available</th>
+        </tr>
+        {% for service in all_services %}
+        <tr>
+            <td>{{service.name}}</td>
+            <td>{{service.age}}</td>
+            <td>{{service.address}}</td>
+            <td>{{service.gender}}</td>
+            <td>{{service.available}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

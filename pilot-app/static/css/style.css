@@ -1,0 +1,68 @@
+/* reset css */
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Courier New', Courier, monospace;
+}
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-image: url('../images/56213664_2077554609025626_3739708499429425152_n.jpg');
+    /* background-size: cover; */
+    /* display về dạng flexbox */
+    display: flex;
+    /* kéo về cuối */
+    justify-content: flex-end;
+}
+
+#div-form {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    /* định dạng trục chính là dạng cột dọc */
+    flex-flow: column;
+    /* kéo ra giữa theo trục chính(trục dọc) */
+    justify-content: center;
+    /* kéo ra giữa theo trục phụ (trục ngang) */
+    align-items: center;
+    
+    /* align-items:  */
+    background-color: white;
+}
+
+#login-form {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    height: 30%;
+}
+
+#btn-login {
+    width: 35%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px rgb(110, 121, 124);
+    background-color: blueviolet;
+    color: #e9e9e9;
+}
+
+#btn-login:active {
+    box-shadow: 0px 0px rgb(110, 121, 124);
+    transition: 1s;
+}
+
+.input-login {
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #e9e9e9;
+    padding: 5px;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+}

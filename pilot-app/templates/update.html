@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form method="POST">
+        <p style="text-align: right"><a href="/logout">Logout</a></p>
+        <label>Name</label>
+        <input type="text" name="full_name" value="{{ service.name }}"><br>
+        <label>Age</label>
+        <input type="text" name="age" value="{{ service.age }}"><br>
+        <label>Address</label>
+        <input type="text" name="address" value="{{ service.address }}"><br>
+        <label>Gender</label>
+        <input type="text" name="gender" value="{{ service.gender }}"><br>
+        <label>Available</label>
+        <input type="text" name="available" value="{{ service.available }}"><br>
+        <button>Save</button>
+    </form>
+</body>
+</html>
